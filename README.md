@@ -211,8 +211,10 @@ After processing, data is stored with this schema:
 
 ```
 university-etl-processor/
-├── server.js              # Main application file
-├── package.json           # Dependencies and scripts
+├── server.js             # Main application file
+├── package.json          # Dependencies and scripts
+├── package-lock.json     # Dependency checksum file
+├── .gitignore            # To exclude files or folders from source control flow
 ├── README.md             # This file
 ├── data/                 # Generated data files
 │   ├── universities.json # JSON data storage
