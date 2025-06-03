@@ -210,7 +210,7 @@ After processing, data is stored with this schema:
 ## File Structure
 
 ```
-university-etl-processor/
+node-js-etl-processor/
 ├── server.js             # Main application file
 ├── package.json          # Dependencies and scripts
 ├── package-lock.json     # Dependency checksum file
