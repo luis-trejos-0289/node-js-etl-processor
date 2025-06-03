@@ -29,7 +29,7 @@ const logger = {
   warn: (message) => console.warn(`[WARN] ${new Date().toISOString()} - ${message}`)
 };
 
-// Extract: Fetch data from API with retry logic
+// Extract: Fetch data from API
 async function extractData() {
   
   const countries = ['Costa Rica', 'Colombia', 'USA']

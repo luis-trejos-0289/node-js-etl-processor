@@ -210,14 +210,13 @@ After processing, data is stored with this schema:
 ## File Structure
 
 ```
-university-etl-process/
+university-etl-processor/
 ├── server.js              # Main application file
 ├── package.json           # Dependencies and scripts
 ├── README.md             # This file
 ├── data/                 # Generated data files
 │   ├── universities.json # JSON data storage
 │   └── universities.csv  # CSV export file
-└── logs/                 # Application logs (future enhancement)
 ```
 
 ## Configuration
@@ -254,23 +253,6 @@ You can modify these constants in `server.js`:
    - Adds primary_domain and primary_website fields
    - Includes last_updated timestamps
    - Maintains original data structure for reference
-
-### Future Enhancements
-
-1. **Advanced Validation**
-   - URL format validation for web pages
-   - Domain name validation
-   - State/province standardization
-
-2. **Data Enrichment**
-   - University ranking data
-   - Student enrollment numbers
-   - Geographic coordinates
-
-3. **Duplicate Detection**
-   - Name similarity matching
-   - Domain-based deduplication
-   - Fuzzy matching algorithms
 
 ## Database Design Considerations
 
@@ -334,11 +316,6 @@ https://orm.drizzle.team/docs/guides/upsert
 ### Scripts
 
 - `npm start`: Start production server
-
-2. **Error Scenarios**
-- Network failures
-- Invalid API responses. NOTE: The USA parameter filter causes the axios client to abort the connection, this particular parameter is not working as expected.
-- File system errors
 
 ### Monitoring
 
